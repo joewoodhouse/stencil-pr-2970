@@ -1,0 +1,31 @@
+{
+  "name": "stencil-tailwind-starter",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
+  "scripts": {
+    "build": "rm -fr www && stencil build",
+    "build.nodelete": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@stencil/core": "^2.6.0",
+    "@stencil/router": "^1.0.1",
+    "workbox-build": "^4.3.1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@stencil/postcss": "^2.0.0",
+    "@stencil/sass": "^1.4.1",
+    "autoprefixer": "^10.2.6",
+    "cssnano": "^4.1.10",
+    "tailwindcss": "^2.1.4"
+  },
+  "engines": {
+    "node": "~14.16.0"
+  }
+}
